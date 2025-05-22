@@ -53,7 +53,7 @@ export default function TechnologiesSection() {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-7 lg:gap-7"
+          className="grid grid-cols-4 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-7 lg:gap-7"
           {...animationProps}
         >
           {technologies.map((tech) => {
@@ -63,8 +63,8 @@ export default function TechnologiesSection() {
                 key={tech.name}
                 className="flex flex-col items-center p-4 bg-slate-200 dark:bg-slate-800 shadow-md rounded-lg"
               >
-                <Icon className={`text-4xl sm:text-7xl mb-2 ${tech.color}`} />
-                <p className="text-xs sm:text-base font-medium text-slate-600 dark:text-neutral-100">
+                <Icon className={`text-2xl sm:text-7xl mb-2 ${tech.color}`} />
+                <p className="text-xs sm:text-base font-normal text-slate-600 dark:text-neutral-100">
                   {tech.name}
                 </p>
                 {tech.level === "learning" && (
