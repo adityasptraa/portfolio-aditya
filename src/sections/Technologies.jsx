@@ -64,7 +64,7 @@ export default function TechnologiesSection() {
                 className="flex flex-col items-center p-4 bg-slate-200 dark:bg-slate-800 shadow-md rounded-lg"
               >
                 <Icon className={`text-4xl sm:text-7xl mb-2 ${tech.color}`} />
-                <p className="text-sm sm:text-base font-medium text-slate-600 dark:text-neutral-100">
+                <p className="text-xs sm:text-base font-medium text-slate-600 dark:text-neutral-100">
                   {tech.name}
                 </p>
                 {tech.level === "learning" && (
