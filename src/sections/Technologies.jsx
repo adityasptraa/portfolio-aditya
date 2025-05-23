@@ -53,7 +53,7 @@ export default function TechnologiesSection() {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-4 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-7 lg:gap-7"
+          className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-7 lg:gap-7"
           {...animationProps}
         >
           {technologies.map((tech) => {
