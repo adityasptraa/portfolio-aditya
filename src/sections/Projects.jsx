@@ -67,7 +67,7 @@ const Projects = () => {
                     {project.name}
                   </h3>
                   <p
-                    className={`text-xs text-center rounded-sm p-1 bg-yellow-200 text-yellow-800 
+                    className={`text-xs text-center rounded-sm p-1 bg-amber-200 text-amber-800 dark:bg-amber-800 dark:text-amber-200
               ${project.status == "In Progress" ? "block" : "hidden"}`}
                   >
                     {project.status}

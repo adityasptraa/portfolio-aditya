@@ -1,3 +1,5 @@
+import cv from "../assets/cv/Curriculum vitae-Ida Bagus Aditya Cahya Wiraguna.pdf"
+
 import profileDark from "../assets/profile/profile-dark.jpg";
 import profileLight from "../assets/profile/profile-light.jpg";
 
@@ -16,7 +18,7 @@ export const hero = {
           solving problems and building things people actually use.`,
   imageProfileLight: profileLight,
   imageProfileDark: profileDark,
-  resume: "https://example.com/resume.pdf",
+  resume: cv,
   hire: "https://wa.me/628987940653",
 };
 export const socialLinks = [

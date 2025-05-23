@@ -47,7 +47,7 @@ export default function Navbar() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.7 }}
-        className="flex justify-between items-center fixed top-0 left-0 w-full z-40 bg-neutral-50/40 dark:bg-neutral-950/40 backdrop-blur-md px-6 sm:px-10 lg:px-20 py-4"
+        className="flex justify-between items-center fixed top-0 left-0 w-full z-40 bg-neutral-50/60 dark:bg-neutral-950/60 backdrop-blur-md px-6 sm:px-10 lg:px-20 py-4"
       >
         <h1 className="text-2xl font-bold text-sky-700 dark:text-neutral-50">G<span className="dark:text-sky-700">W.</span></h1>
 

@@ -27,6 +27,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-4 text-sm">
           <a href="#hero" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
+          <a href="#technologies" className="hover:underline">Technologies</a>
           <a href="#projects" className="hover:underline">Projects</a>
           <a href="#certificates" className="hover:underline">Certificates</a>
         </div>
