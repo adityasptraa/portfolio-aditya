@@ -1,12 +1,10 @@
-import cv from "../assets/cv/Curriculum vitae-Ida Bagus Aditya Cahya Wiraguna.pdf"
+import cv from "../assets/cv/Curriculum vitae-Ida Bagus Aditya Cahya Wiraguna.pdf";
 
 import profileDark from "../assets/profile/profile-dark.jpg";
 import profileLight from "../assets/profile/profile-light.jpg";
 
 import aboutDark from "../assets/about/about-dark.jpg";
 import aboutLight from "../assets/about/about-light.jpg";
-
-
 
 // hero
 export const hero = {
@@ -39,23 +37,25 @@ export const socialLinks = [
   },
 ];
 
-
 // about
 export const aboutMe = {
-  description: `  Detail-oriented and motivated Software Engineering student with a
-          solid foundation in fullstack web development using Laravel, React.js,
-          and Express.js. Proven experience in designing and implementing
-          scalable applications with a focus on responsive UI, database
-          management, and API integration. Seeking to leverage academic projects
-          and internship experience in a dynamic tech environment to deliver
-          innovative solutions.`,
+  description: `  Detail-oriented and driven Software Engineering student with a strong foundation in full-stack web development using
+Laravel, React.js, and Express.js. Proven leadership experience in academic software projects, with a focus on
+responsive design, API integration, and database management. Demonstrates strong collaboration, problem-solving,
+and project management skills, gained through internships and team-based development. Currently seeking an
+opportunity to contribute to impactful software solutions in a forward-thinking tech company.`,
   imageAboutLight: aboutLight,
   imageAboutDark: aboutDark,
 };
 
 // technologies
 export const technologies = [
-  { name: "HTML", icon: "FaHtml5", color: "text-orange-500", level: "advanced" },
+  {
+    name: "HTML",
+    icon: "FaHtml5",
+    color: "text-orange-500",
+    level: "advanced",
+  },
   { name: "CSS", icon: "FaCss3Alt", color: "text-blue-500", level: "advanced" },
   {
     name: "JavaScript",
@@ -120,6 +120,3 @@ export const technologies = [
     level: "learning",
   },
 ];
-
-
-
