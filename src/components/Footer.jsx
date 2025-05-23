@@ -34,7 +34,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-xs">
-          &copy; {new Date().getFullYear()} Gus Wira Portofolio | All Rights Reserved
+          &copy; {new Date().getFullYear()} Gus Wira Portfolio | All Rights Reserved
         </p>
       </div>
     </footer>

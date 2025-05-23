@@ -85,7 +85,7 @@ export const projects = [
     title: "Personal Project",
     status: "Completed",
     description: `An event ticketing platform created with PHP 
-    and jQuery that facilitates event management and ticket sales.`,
+    and Bootstrap that facilitates event management and ticket sales.`,
     tech: ["PHP", "Bootstrap", "MySQL"],
     live: "#",
     github: "https://github.com/GusWiraAditya/Event-Ticket",
