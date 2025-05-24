@@ -26,7 +26,7 @@ export const projects = [
     description: `A modern e-commerce platform built using React.js, Express.js,
       Tailwind CSS, and PostgreSQL, aimed at delivering seamless online
       shopping experience.`,
-    tech: ["React.js", "Express.js", "Tailwind CSS", "PostgreSQL"],
+    tech: ["React.js", "Laravel", "Tailwind CSS", "PostgreSQL"],
     live: "#",
     github: "#",
   },
