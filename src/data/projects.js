@@ -23,7 +23,7 @@ export const projects = [
     image: madeByCan,
     title: "Project Base Learning",
     status: "In Progress",
-    description: `A modern e-commerce platform built using React.js, Express.js,
+    description: `A modern e-commerce platform built using React.js, Laravel,
       Tailwind CSS, and PostgreSQL, aimed at delivering seamless online
       shopping experience.`,
     tech: ["React.js", "Laravel", "Tailwind CSS", "PostgreSQL"],
