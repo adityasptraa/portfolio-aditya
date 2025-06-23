@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import ticketMusica from "../assets/design/ticket-design-1.jpg";
+import ticketMusica from "../assets/design/ticket-musica.jpg";
 import certificateDesign from "../assets/design/sertif-design.jpg";
-import ticketJamming from "../assets/design/ticket-design-2.jpg";
-import posterJamming from "../assets/design/poster-design-2.jpg";
+import ticketJamming from "../assets/design/ticket-jamming.jpg";
+import posterJamming from "../assets/design/poster-jamming.jpg";
 import merchDesign from "../assets/design/merch-design.jpg";
 import nametagDesign from "../assets/design/nametag-design.jpg";
 
@@ -10,7 +10,7 @@ const dataDesign = [
   {
     id: 1,
     title: "Ticket Design",
-    issuer: "UKM Band PNB",
+    issuer: "Musica Holic Talkshow #5",
     image: ticketMusica,
   },
   {
