@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import ticket1 from "../assets/design/ticket1.jpg";
-import certificateDesign from "../assets/design/sertifDesign.jpg";
-import ticket2 from "../assets/design/ticket2.jpg";
-import poster2 from "../assets/design/poster2.jpg";
+import ticketMusica from "../assets/design/ticket-design-1.jpg";
+import certificateDesign from "../assets/design/sertif-design.jpg";
+import ticketJamming from "../assets/design/ticket-design-2.jpg";
+import posterJamming from "../assets/design/poster-design-2.jpg";
 import merchDesign from "../assets/design/merch-design.jpg";
-import nametagDesign from "../assets/design/nametagDesign.jpg";
+import nametagDesign from "../assets/design/nametag-design.jpg";
 
 const dataDesign = [
   {
     id: 1,
     title: "Ticket Design",
     issuer: "UKM Band PNB",
-    image: ticket1,
+    image: ticketMusica,
   },
   {
     id: 2,
@@ -23,13 +23,13 @@ const dataDesign = [
     id: 3,
     title: "Tiket Design",
     issuer: "Jamming Session #7",
-    image: ticket2,
+    image: ticketJamming,
   },
   {
     id: 4,
     title: "Main Event Poster Design",
     issuer: "Jamming Session #7",
-    image: poster2,
+    image: posterJamming,
   },
   {
     id: 5,
