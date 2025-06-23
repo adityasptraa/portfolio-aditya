@@ -16,7 +16,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.7 }}
-          className="text-2xl sm:text-5xl font-bold text-sky-700 dark:text-neutral-50"
+          className="text-2xl sm:text-5xl font-bold text-blue-950 dark:text-neutral-50"
         >
           About <span className="dark:text-sky-700">Me</span>
         </motion.h1>
@@ -25,7 +25,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.7 }}
-          className="w-full text-md lg:text-lg text-slate-500 dark:text-neutral-400 pt-2 text-justify"
+          className="w-full text-md lg:text-lg text-slate-700 dark:text-neutral-400 pt-2 text-justify"
         >
             {aboutMe.description}
         </motion.span>

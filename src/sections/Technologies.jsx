@@ -13,9 +13,10 @@ import {
   SiTailwindcss,
   SiCodeigniter,
   SiMysql,
-  SiPostgresql,
-  SiMongodb,
-  SiExpress,
+  SiAdobepremierepro,
+  SiAdobephotoshop,
+  SiCanva,
+  SiFigma,
 } from "react-icons/si";
 
 export const iconMap = {
@@ -26,13 +27,13 @@ export const iconMap = {
   FaLaravel,
   FaBootstrap,
   FaReact,
-  DiJqueryLogo,
+  SiAdobepremierepro,
   SiTailwindcss,
   SiCodeigniter,
   SiMysql,
-  SiPostgresql,
-  SiMongodb,
-  SiExpress,
+  SiAdobephotoshop,
+  SiCanva,
+  SiFigma,
 };
 
 const animationProps = {
@@ -44,10 +45,10 @@ const animationProps = {
 export default function TechnologiesSection() {
   return (
     <section className="p-10 sm:p-20 overflow-hidden" id="technologies">
-      <div className="text-center">
+      <div className="text-end">
         <motion.h2
           {...animationProps}
-          className="text-3xl sm:text-5xl font-bold text-sky-700 dark:text-white mb-8"
+          className="text-3xl sm:text-5xl font-bold text-blue-950 dark:text-white mb-8"
         >
           Tech <span className="dark:text-sky-700">Stack</span>
         </motion.h2>
@@ -67,11 +68,11 @@ export default function TechnologiesSection() {
                 <p className="text-xs sm:text-base font-normal text-slate-600 dark:text-neutral-100">
                   {tech.name}
                 </p>
-                {tech.level === "learning" && (
+                {/* {tech.level === "learning" && (
                   <span className="mt-2 text-xs px-3 py-1 rounded-full bg-yellow-400 text-slate-800 dark:text-white dark:bg-yellow-600">
                     Learning
                   </span>
-                )}
+                )} */}
               </div>
             );
           })}

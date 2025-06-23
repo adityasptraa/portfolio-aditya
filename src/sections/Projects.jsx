@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaFigma, FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -23,11 +23,10 @@ const Projects = () => {
       <motion.div className="max-w-6xl mx-auto text-center" {...animationProps}>
         <motion.h1
           {...animationProps}
-          className="text-2xl sm:text-5xl font-bold text-sky-700 dark:text-neutral-50"
+          className="text-2xl sm:text-5xl font-bold text-blue-950 dark:text-neutral-50"
         >
           My <span className="dark:text-sky-700">Projects</span>
           <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm  pt-3 sm:pt-5 font-normal">
-            Some of the projects I’ve worked on during my academic journey.
           </p>
           <div className="flex flex-wrap gap-2 justify-center mb-5 sm:mb-10">
             {allTechnologies.map((tech) => (
@@ -36,9 +35,9 @@ const Projects = () => {
                 onClick={() => setFilter(tech)}
                 className={`px-3 py-1 rounded-full text-sm font-normal border ${
                   filter === tech
-                    ? "bg-sky-800 text-white"
+                    ? "bg-blue-950 text-white"
                     : "border-gray-300 dark:border-slate-700 text-slate-700 dark:text-neutral-100"
-                } hover:bg-sky-800 hover:text-white transition`}
+                } hover:bg-blue-950 hover:text-white transition`}
               >
                 {tech}
               </button>
@@ -88,23 +87,38 @@ const Projects = () => {
                 ))}
               </div>
               <div className="flex gap-4 px-9 pb-8">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  <FaExternalLinkAlt size={14} /> Live View
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  <FaGithub size={14} /> GitHub
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-sm text-blue-950 dark:text-blue-400 hover:underline"
+                  >
+                    <FaExternalLinkAlt size={14} /> Live View
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-sm text-blue-950 dark:text-blue-400 hover:underline"
+                  >
+                    <FaGithub size={14} /> GitHub
+                  </a>
+                )}
+                {project.figma && (
+                  <a
+                    href={project.figma}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-sm text-blue-950 dark:text-blue-400 hover:underline"
+                  >
+                    <FaFigma size={14} /> Figma
+                  </a>
+                )}
               </div>
+
             </motion.div>
           ))}
         </div>

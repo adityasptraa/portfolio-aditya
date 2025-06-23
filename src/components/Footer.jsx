@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,14 +11,14 @@ const Footer = () => {
         </p>
 
         {/* Contact Buttons */}
-        <div className="flex justify-center gap-6 mb-6 text-xl text-blue-600 dark:text-blue-400">
-          <a href="mailto:guswiraaditya@gmail.com" aria-label="Email">
+        <div className="flex justify-center gap-6 mb-6 text-xl text-blue-950 dark:text-blue-400">
+          <a href="mailto:aditya1609saputra@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
-          <a href="https://github.com/GusWiraAditya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <FaGithub />
+          <a href="https://instagram.com/adityaasptraa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <FaInstagram />
           </a>
-          <a href="https://linkedin.com/in/guswiraaditya" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/adityaasptraa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>
@@ -29,12 +29,12 @@ const Footer = () => {
           <a href="#about" className="hover:underline">About</a>
           <a href="#technologies" className="hover:underline">Technologies</a>
           <a href="#projects" className="hover:underline">Projects</a>
-          <a href="#certificates" className="hover:underline">Certificates</a>
+          <a href="#design" className="hover:underline">Design</a>
         </div>
 
         {/* Copyright */}
         <p className="text-xs">
-          &copy; {new Date().getFullYear()} Gus Wira Portfolio | All Rights Reserved
+          &copy; {new Date().getFullYear()} Aditya Saputra Portfolio | All Rights Reserved
         </p>
       </div>
     </footer>

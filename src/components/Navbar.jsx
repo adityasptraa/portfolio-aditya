@@ -8,7 +8,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#technologies", label: "Technologies" },
   { href: "#projects", label: "Projects" },
-  { href: "#certificates", label: "Certificates" },
+  { href: "#design", label: "Design" },
 ];
 
 export default function Navbar() {
@@ -47,9 +47,9 @@ export default function Navbar() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.7 }}
-        className="flex justify-between items-center fixed top-0 left-0 w-full z-40 bg-neutral-50/60 dark:bg-neutral-950/60 backdrop-blur-md px-6 sm:px-10 lg:px-20 py-4"
+        className="flex justify-between items-center fixed top-0 left-0 w-full z-40 bg-stone-200/60 dark:bg-slate-950/60 backdrop-blur-md px-6 sm:px-10 lg:px-20 py-4"
       >
-        <h1 className="text-2xl font-bold text-sky-700 dark:text-neutral-50">G<span className="dark:text-sky-700">W.</span></h1>
+        <h1 className="text-2xl font-bold text-blue-800 dark:text-neutral-50">Aditya <span className="text-blue-950 dark:text-neutral-50"> Saputra</span></h1>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-6 text-md font-semibold items-center">
@@ -59,7 +59,7 @@ export default function Navbar() {
                 href={href}
                 className={`transition-colors ${
                   activeLink === href
-                    ? "text-sky-700 dark:text-white border-b-2 border-spacing-y pb-1 border-sky-700 dark:border-white"
+                    ? "text-blue-950 dark:text-white border-b-2 border-spacing-y pb-1 border-blue-950 dark:border-white"
                     : "text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-white"
                 }`}
               >
@@ -67,7 +67,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
+          {/* <li>
             <button
               onClick={toggleTheme}
               className={`w-16 h-8 flex items-center rounded-full p-1 transition-colors duration-300
@@ -87,7 +87,7 @@ export default function Navbar() {
                 )}
               </motion.div>
             </button>
-          </li>
+          </li> */}
         </ul>
 
         {/* Mobile Menu Toggle */}

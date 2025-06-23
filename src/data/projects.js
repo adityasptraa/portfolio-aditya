@@ -1,7 +1,7 @@
 import eLibrary from "../assets/projects/eLibrary.jpg";
 import sipetak from "../assets/projects/sipetak.jpg";
 import nuansaBudaya from "../assets/projects/nuansaBudaya.jpg";
-import loketEvent from "../assets/projects/loketEvent.jpg";
+import shoemag from "../assets/projects/shoemag.jpg";
 import bandGenerator from "../assets/projects/bandGenerator.jpg";
 import madeByCan from "../assets/projects/madeByCan.jpg";
 
@@ -13,7 +13,7 @@ export const allTechnologies = [
   "Laravel",
   "Tailwind CSS",
   "React.js",
-  "Express.js"
+  "Figma"
 ];
 
 export const projects = [
@@ -29,18 +29,6 @@ export const projects = [
     tech: ["React.js", "Laravel", "Tailwind CSS", "PostgreSQL"],
     live: "#",
     github: "#",
-  },
-  {
-    id: 2,
-    name: "Band Name Generator",
-    image: bandGenerator,
-    title: "Personal Project",
-    status: "Completed",
-    description: `An interactive web app that generates creative band names
-      using Express.js, CSS, and EJS templating for a dynamic user experience.`,
-    tech: ["Express.js", "CSS", "EJS"],
-    live: "#",
-    github: "https://github.com/GusWiraAditya/band-name-generator",
   },
   {
     id: 3,
@@ -80,14 +68,13 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Loket Event",
-    image: loketEvent,
-    title: "Personal Project",
+    name: "Shoemag",
+    image: shoemag,
+    title: "Team Project",
     status: "Completed",
-    description: `An event ticketing platform created with PHP 
-    and Bootstrap that facilitates event management and ticket sales.`,
-    tech: ["PHP", "Bootstrap", "MySQL"],
-    live: "#",
-    github: "https://github.com/GusWiraAditya/Event-Ticket",
+    description: `User Unterface (UI) design of an online shoe shopping website inspired by the kick avenue website and websites of international shoe brands such as addidas, nike and puma made using Figma.`,
+    tech: ["Figma"],
+    live: "https://www.figma.com/proto/JpGInzk9c1BEnINVFSHQfb/SHOEMAG-PROJECT",
+    figma: "https://www.figma.com/proto/JpGInzk9c1BEnINVFSHQfb/SHOEMAG-PROJECT",
   },
 ];

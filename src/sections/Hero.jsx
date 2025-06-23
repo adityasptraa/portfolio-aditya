@@ -42,7 +42,7 @@ export default function Hero() {
       <div className="w-full lg:w-[500px] flex flex-col justify-center items-center lg:items-start pt-5 lg:pt-0">
         <motion.h1
           {...animationProps}
-          className="text-3xl sm:text-5xl lg:text-7xl font-bold text-sky-700 dark:text-neutral-50"
+          className="text-2xl sm:text-5xl lg:text-5xl font-bold text-blue-950 dark:text-neutral-50"
         >
           {hero.firstName}{" "}
           <span className="dark:text-sky-700">{hero.lastName}</span>
@@ -50,7 +50,7 @@ export default function Hero() {
 
         <motion.span
           {...animationProps}
-          className="text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-600 dark:text-neutral-400 pt-2 text-center lg:text-left"
+          className="text-md sm:text-xl lg:text-2xl font-semibold text-slate-600 dark:text-neutral-400 pt-2 text-center lg:text-left"
         >
           <TypeAnimation
             sequence={hero.role.flatMap((role) => [role, 1000])}
@@ -75,7 +75,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-sky-700 dark:text-neutral-50 hover:text-sky-600 dark:hover:text-neutral-300 transition duration-300"
+              className="text-blue-950 dark:text-neutral-50 hover:text-blue-900 dark:hover:text-neutral-300 transition duration-300"
             >
               {iconMap[icon] || icon}
             </a>
@@ -87,7 +87,7 @@ export default function Hero() {
             href={hero.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-sky-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-sky-600 transition duration-300"
+            className="bg-blue-950 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-900 transition duration-300"
           >
             CV
           </a>
