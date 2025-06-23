@@ -1,8 +1,10 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { TypeAnimation } from "react-type-animation";
 import { hero, socialLinks } from "../data";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+
 
 const iconMap = {
   linkedin: <FaLinkedin size={25} />,
