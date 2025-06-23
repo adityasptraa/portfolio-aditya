@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import tickets from "../assets/design/tickets.jpg";
+import ticket1 from "../assets/design/ticket1.jpg";
 import certificateDesign from "../assets/design/sertifDesign.jpg";
 import ticket2 from "../assets/design/ticket2.jpg";
 import poster2 from "../assets/design/poster2.jpg";
@@ -11,7 +11,7 @@ const dataDesign = [
     id: 1,
     title: "Ticket Design",
     issuer: "UKM Band PNB",
-    image: tickets,
+    image: ticket1,
   },
   {
     id: 2,
