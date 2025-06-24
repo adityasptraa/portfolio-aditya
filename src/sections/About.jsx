@@ -75,7 +75,7 @@ export default function About() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="text-red-950 dark:text-neutral-50 hover:text-blue-700 dark:hover:text-sky-400 transition duration-300"
+          className="text-red-950 dark:text-neutral-50 hover:text-red-800 dark:hover:text-sky-400 transition duration-300"
         >
           {iconMap[icon] || icon}
         </a>
