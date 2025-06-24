@@ -1,9 +1,9 @@
 import ticketMusica from "../assets/design/ticket-musica.jpg";
-import certificateDesign from "../assets/design/sertif-design.jpg";
+import certificateDesign from "../assets/design/sertif.jpg";
 import ticketJamming from "../assets/design/ticket-jamming.jpg";
 import posterJamming from "../assets/design/poster-jamming.jpg";
-import merchDesign from "../assets/design/merch-design.jpg";
-import nametagDesign from "../assets/design/nametag-design.jpg";
+import merchDesign from "../assets/design/merch.jpg";
+import nametagDesign from "../assets/design/nametag.jpg";
 
 export const allDesigns = [
     {
