@@ -5,8 +5,8 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("theme");
-    if (saved === "light") return false;
-    return true; 
+    if (saved === "light") return true;
+    return false; // default to light mode
   });
 
   useEffect(() => {
