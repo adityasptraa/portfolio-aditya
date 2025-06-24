@@ -1,7 +1,7 @@
 import ticketMusica from "../assets/design/musica.jpg";
 import certificateDesign from "../assets/design/sertif.jpg";
 import ticketJamming from "../assets/design/jamming.jpg";
-import posterJamming from "../assets/design/poster-jamming.jpg";
+import posterJamming from "../assets/design/posterjamming.jpg";
 import merchDesign from "../assets/design/merch.jpg";
 import nametagDesign from "../assets/design/nametag.jpg";
 
