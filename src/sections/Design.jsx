@@ -13,7 +13,7 @@ const Design = () => {
       <motion.div {...animationProps} className="max-w-6xl mx-auto text-start">
         <motion.h1
           {...animationProps}
-          className="text-2xl sm:text-5xl font-bold text-red-950 dark:text-neutral-50"
+          className="text-2xl md:text-3xl lg:text-5xl font-bold text-red-950 dark:text-neutral-50"
         >
           My <span className="dark:text-sky-700">Design</span>
           <p className="text-red-900 dark:text-gray-400 mb-5 text-sm pt-3 sm:pt-5 font-normal">
@@ -36,7 +36,7 @@ const Design = () => {
                 />
                 <div className="p-5 flex flex-col flex-1 justify-between h-full">
                   <div>
-                    <h3 className="text-sm lg:text-lg font-semibold min-h-[2rem]">
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold min-h-[2rem]">
                       {design.title}
                     </h3>
                     <p className="text-xs lg:text-md font-medium text-slate-700 dark:text-neutral-300 pb-3">

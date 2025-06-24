@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className="bg-neutral-100 dark:bg-neutral-950 pt-14 pb-6 mt-20 text-center text-gray-700 dark:text-gray-400 w-screen">
       <div className="container mx-auto px-4">
         {/* Get in Touch Section */}
-        <h3 className="text-2xl font-bold mb-4 text-red-950 dark:text-white">Get in Touch</h3>
-        <p className="max-w-xl mx-auto mb-6 text-sm">
+        <h3 className="text-lg md:text-xl lg:text-3xl font-bold mb-4 text-red-950 dark:text-white">Get in Touch</h3>
+        <p className="max-w-xl mx-auto mb-6 text-sm md:text-md lg:text-lg">
           I'm open to collaboration, internship opportunities, or just a friendly tech talk. Feel free to reach out!
         </p>
 

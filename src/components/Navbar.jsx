@@ -115,7 +115,7 @@ export default function Navbar() {
             <button
               onClick={() => setMenuOpen(false)}
               aria-label="Close Menu"
-              className="absolute top-6 right-6 text-sky-700 dark:text-white"
+              className="absolute top-6 right-6 text-red-900 dark:text-white"
             >
               <X size={28} />
             </button>
@@ -129,8 +129,8 @@ export default function Navbar() {
                     onClick={() => setMenuOpen(false)}
                     className={`block transition-colors  ${
                       activeLink === href
-                        ? "text-sky-700 dark:text-white"
-                        : "text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-white"
+                        ? "text-red-950 dark:text-white"
+                        : "text-slate-600 dark:text-slate-400 hover:text-red-900 dark:hover:text-white"
                     }`}
                   >
                     {label}

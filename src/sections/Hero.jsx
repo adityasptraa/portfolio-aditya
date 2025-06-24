@@ -60,7 +60,7 @@ export default function Hero() {
 
         <motion.p
           {...animationProps}
-          className="text-md sm:text-lg text-slate-700 dark:text-neutral-400 mt-4 max-w-xl leading-relaxed"
+          className="text-sm md:text-lg lg:text-xl text-slate-700 dark:text-neutral-400 mt-4 max-w-xl leading-relaxed"
         >
           {hero.description}
         </motion.p>

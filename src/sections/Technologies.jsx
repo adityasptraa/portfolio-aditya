@@ -48,13 +48,13 @@ export default function TechnologiesSection() {
       <div className="text-end">
         <motion.h2
           {...animationProps}
-          className="text-3xl sm:text-5xl font-bold text-red-950 dark:text-white mb-8"
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-red-950 dark:text-white mb-8"
         >
           Technologies <span className="dark:text-sky-700"></span>
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 lg:grid-cols-7 lg:gap-7"
+          className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-7 lg:gap-7"
           {...animationProps}
         >
           {technologies.map((tech) => {
