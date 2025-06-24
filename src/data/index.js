@@ -24,11 +24,11 @@ export const socialLinks = [
     label: "LinkedIn",
     icon: "linkedin",
   },
-  // {
-  //   href: "https://www.github.com/GusWiraAditya/",
-  //   label: "GitHub",
-  //   icon: "github",
-  // },
+  {
+    label: "Email",
+    href: "mailto:aditya1609saputra@gmail.com",
+    icon: "email", // custom handle
+  },
   {
     href: "https://www.instagram.com/adityaasptraa/",
     label: "Instagram",

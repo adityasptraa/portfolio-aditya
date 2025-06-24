@@ -12,14 +12,14 @@ const Footer = () => {
 
         {/* Contact Buttons */}
         <div className="flex justify-center gap-6 mb-6 text-xl text-blue-950 dark:text-blue-400">
+          <a href="https://linkedin.com/in/adityaasptraa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin />
+          </a>
           <a href="mailto:aditya1609saputra@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
           <a href="https://instagram.com/adityaasptraa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaInstagram />
-          </a>
-          <a href="https://linkedin.com/in/adityaasptraa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <FaLinkedin />
           </a>
         </div>
 

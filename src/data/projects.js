@@ -52,7 +52,7 @@ export const projects = [
       Bootstrap, jQuery, and MySQL to promote cultural heritage.`,
     tech: ["CodeIgniter", "Bootstrap", "jQuery", "MySQL"],
     live: "#",
-    github: "https://github.com/GusWiraAditya/portal-nuansa-budaya",
+    github: "#",
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ export const projects = [
       Bootstrap, and jQuery, enabling efficient book management and user access.`,
     tech: ["CodeIgniter", "Bootstrap", "jQuery", "MySQL"],
     live: "#",
-    github: "https://github.com/GusWiraAditya/E-Library",
+    github: "#",
   },
   {
     id: 6,

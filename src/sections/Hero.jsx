@@ -2,14 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { TypeAnimation } from "react-type-animation";
-import { hero, socialLinks } from "../data";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-
-const iconMap = {
-  linkedin: <FaLinkedin size={25} />,
-  github: <FaGithub size={25} />,
-  instagram: <FaInstagram size={25} />,
-};
+import { hero } from "../data";
 
 const animationProps = {
   initial: { y: 30, opacity: 0 },
@@ -50,7 +43,7 @@ export default function Hero() {
           className="text-3xl sm:text-5xl font-bold text-blue-950 dark:text-white"
         >
           {hero.firstName}{" "}
-          <span className="dark:text-sky-600 text-blue-700">{hero.lastName}</span>
+          <span className="dark:text-sky-600 text-blue-950">{hero.lastName}</span>
         </motion.h1>
 
         <motion.span

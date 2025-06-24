@@ -2,13 +2,13 @@ import {aboutMe} from "../data";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { hero, socialLinks } from "../data";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 
 const iconMap = {
   instagram: <FaInstagram size={25} />,
   linkedin: <FaLinkedin size={25} />,
-  github: <FaGithub size={25} />,
+  email: <FaEnvelope size={25} />,
 };
 
 const animationProps = {
@@ -82,7 +82,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-white px-5 py-2 rounded-lg shadow hover:bg-slate-300 dark:hover:bg-slate-600 transition"
           >
-            Hire Me
+            My Contact
           </a>
         </motion.div>
       </div>
