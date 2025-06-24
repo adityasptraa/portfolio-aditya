@@ -23,7 +23,7 @@ const Projects = () => {
       <motion.div className="max-w-6xl mx-auto text-center" {...animationProps}>
         <motion.h1
           {...animationProps}
-          className="text-2xl sm:text-5xl font-bold text-blue-950 dark:text-neutral-50"
+          className="text-2xl sm:text-5xl font-bold text-red-950 dark:text-neutral-50"
         >
           My <span className="dark:text-sky-700">Projects</span>
           <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm  pt-3 sm:pt-5 font-normal">
@@ -35,9 +35,9 @@ const Projects = () => {
                 onClick={() => setFilter(tech)}
                 className={`px-3 py-1 rounded-full text-sm font-normal border ${
                   filter === tech
-                    ? "bg-blue-950 text-white"
+                    ? "bg-red-950 text-white"
                     : "border-gray-300 dark:border-slate-700 text-slate-700 dark:text-neutral-100"
-                } hover:bg-blue-950 hover:text-white transition`}
+                } hover:bg-red-950 hover:text-white transition`}
               >
                 {tech}
               </button>
@@ -80,7 +80,7 @@ const Projects = () => {
                 {project.tech.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-2 py-1 text-xs bg-sky-100 dark:bg-sky-800 text-sky-800 dark:text-blue-100 rounded"
+                    className="px-2 py-1 text-xs bg-slate-200 dark:bg-sky-800 text-red-900 dark:text-blue-100 rounded"
                   >
                     {tech}
                   </span>
@@ -92,7 +92,7 @@ const Projects = () => {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-blue-950 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-1 text-sm text-red-950 dark:text-blue-400 hover:underline"
                   >
                     <FaExternalLinkAlt size={14} /> Live View
                   </a>
@@ -102,7 +102,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-blue-950 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-1 text-sm text-red-950 dark:text-blue-400 hover:underline"
                   >
                     <FaGithub size={14} /> GitHub
                   </a>
@@ -112,7 +112,7 @@ const Projects = () => {
                     href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-blue-950 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-1 text-sm text-red-950 dark:text-blue-400 hover:underline"
                   >
                     <FaFigma size={14} /> Figma
                   </a>

@@ -40,10 +40,10 @@ export default function Hero() {
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
         <motion.h1
           {...animationProps}
-          className="text-3xl sm:text-5xl font-bold text-blue-950 dark:text-white"
+          className="text-3xl sm:text-5xl font-bold text-red-950 dark:text-white"
         >
           {hero.firstName}{" "}
-          <span className="dark:text-sky-600 text-blue-950">{hero.lastName}</span>
+          <span className="dark:text-sky-600 text-red-950">{hero.lastName}</span>
         </motion.h1>
 
         <motion.span
@@ -60,7 +60,7 @@ export default function Hero() {
 
         <motion.p
           {...animationProps}
-          className="text-md sm:text-lg text-slate-500 dark:text-neutral-400 mt-4 max-w-xl leading-relaxed"
+          className="text-md sm:text-lg text-slate-700 dark:text-neutral-400 mt-4 max-w-xl leading-relaxed"
         >
           {hero.description}
         </motion.p>

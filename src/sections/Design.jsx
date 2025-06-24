@@ -13,10 +13,10 @@ const Design = () => {
       <motion.div {...animationProps} className="max-w-6xl mx-auto text-start">
         <motion.h1
           {...animationProps}
-          className="text-2xl sm:text-5xl font-bold text-blue-950 dark:text-neutral-50"
+          className="text-2xl sm:text-5xl font-bold text-red-950 dark:text-neutral-50"
         >
           My <span className="dark:text-sky-700">Design</span>
-          <p className="text-gray-600 dark:text-gray-400 mb-5 text-sm pt-3 sm:pt-5 font-normal">
+          <p className="text-red-900 dark:text-gray-400 mb-5 text-sm pt-3 sm:pt-5 font-normal">
             Here are some Design I’ve made for events, merchandise, and more.
           </p>
         </motion.h1>

@@ -48,7 +48,7 @@ export default function TechnologiesSection() {
       <div className="text-end">
         <motion.h2
           {...animationProps}
-          className="text-3xl sm:text-5xl font-bold text-blue-950 dark:text-white mb-8"
+          className="text-3xl sm:text-5xl font-bold text-red-950 dark:text-white mb-8"
         >
           Technologies <span className="dark:text-sky-700"></span>
         </motion.h2>

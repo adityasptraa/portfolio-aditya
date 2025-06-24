@@ -49,7 +49,7 @@ export default function Navbar() {
         transition={{ duration: 1, delay: 0.7 }}
         className="flex justify-between items-center fixed top-0 left-0 w-full z-40 bg-stone-200/60 dark:bg-slate-950/60 backdrop-blur-md px-6 sm:px-10 lg:px-20 py-4"
       >
-        <h1 className="text-2xl font-bold text-blue-800 dark:text-neutral-50">Aditya <span className="text-blue-950 dark:text-neutral-50"> Saputra</span></h1>
+        <h1 className="text-2xl font-bold text-red-950 dark:text-neutral-50">Aditya <span className="text-red-900 dark:text-neutral-50"> Saputra</span></h1>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-6 text-md font-semibold items-center">
@@ -59,8 +59,8 @@ export default function Navbar() {
                 href={href}
                 className={`transition-colors ${
                   activeLink === href
-                    ? "text-blue-950 dark:text-white border-b-2 border-spacing-y pb-1 border-blue-950 dark:border-white"
-                    : "text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-white"
+                    ? "text-red-950 dark:text-white border-b-2 border-spacing-y pb-1 border-red-950 dark:border-white"
+                    : "text-slate-600 dark:text-slate-400 hover:text-red-800 dark:hover:text-white"
                 }`}
               >
                 {label}

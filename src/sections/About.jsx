@@ -31,7 +31,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.7 }}
-          className="text-2xl sm:text-5xl font-bold text-blue-950 dark:text-neutral-50"
+          className="text-2xl sm:text-5xl font-bold text-red-950 dark:text-neutral-50"
         >
           About <span className="dark:text-sky-700">Me</span>
         </motion.h1>
@@ -56,7 +56,7 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-blue-950 dark:text-neutral-50 hover:text-blue-700 dark:hover:text-sky-400 transition duration-300"
+              className="text-red-950 dark:text-neutral-50 hover:text-blue-700 dark:hover:text-sky-400 transition duration-300"
             >
               {iconMap[icon] || icon}
             </a>
@@ -72,7 +72,7 @@ export default function About() {
             href={hero.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-950 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-900 transition"
+            className="bg-red-950 text-white px-5 py-2 rounded-lg shadow hover:bg-red-800 transition"
           >
             Curriculum Vitae
           </a>
