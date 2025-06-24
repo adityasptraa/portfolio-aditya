@@ -50,7 +50,7 @@ export default function TechnologiesSection() {
           {...animationProps}
           className="text-3xl sm:text-5xl font-bold text-blue-950 dark:text-white mb-8"
         >
-          Tech <span className="dark:text-sky-700">Stack</span>
+          Technologies <span className="dark:text-sky-700"></span>
         </motion.h2>
 
         <motion.div

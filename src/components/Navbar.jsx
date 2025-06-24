@@ -92,9 +92,9 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center gap-3">
-          <button onClick={toggleTheme} aria-label="Toggle Theme">
+          {/* <button onClick={toggleTheme} aria-label="Toggle Theme">
             {darkMode ? <Moon size={22} className="text-neutral-50" /> : <Sun size={22} className="text-amber-500" />}
-          </button>
+          </button> */}
           <button onClick={() => setMenuOpen(true)} aria-label="Open Menu">
             <Menu size={28} />
           </button>

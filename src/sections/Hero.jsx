@@ -5,7 +5,6 @@ import { TypeAnimation } from "react-type-animation";
 import { hero, socialLinks } from "../data";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
-
 const iconMap = {
   linkedin: <FaLinkedin size={25} />,
   github: <FaGithub size={25} />,
@@ -13,9 +12,9 @@ const iconMap = {
 };
 
 const animationProps = {
-  initial: { y: -50, opacity: 0 },
-  animate: { y: 0, opacity: 1 },
-  transition: { duration: 1, delay: 0.7 },
+  initial: { y: 30, opacity: 0 },
+  whileInView: { y: 0, opacity: 1 },
+  transition: { duration: 0.7 },
 };
 
 export default function Hero() {
@@ -25,84 +24,55 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="grid grid-cols-1 lg:grid-cols-2 p-10 sm:pt-20 items-center overflow-hidden"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-8 sm:px-16 py-10 sm:py-20 items-center"
     >
-      <div className="flex justify-center w-full lg:mb-0">
-        <motion.img
-          {...animationProps}
+      {/* Left - Image */}
+      <motion.div
+        {...animationProps}
+        className="flex justify-center"
+      >
+        <img
           src={profile}
-          alt={hero.firstName + " " + hero.lastName}
-          className="rounded-xl lg:rounded-full w-60 lg:w-[500px] object-cover shadow-lg"
+          alt={`${hero.firstName} ${hero.lastName}`}
+          className="rounded-xl lg:rounded-full w-60 lg:w-[450px] object-cover shadow-xl"
           style={{
             filter: darkMode
               ? "drop-shadow(0 0 10px rgba(255,255,255,0.4))"
               : "drop-shadow(0 0 10px rgba(22,33,117,0.3))",
           }}
         />
-      </div>
+      </motion.div>
 
-      <div className="w-full lg:w-[500px] flex flex-col justify-center items-center lg:items-start pt-5 lg:pt-0">
+      {/* Right - Text Content */}
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
         <motion.h1
           {...animationProps}
-          className="text-2xl sm:text-5xl lg:text-5xl font-bold text-blue-950 dark:text-neutral-50"
+          className="text-3xl sm:text-5xl font-bold text-blue-950 dark:text-white"
         >
           {hero.firstName}{" "}
-          <span className="dark:text-sky-700">{hero.lastName}</span>
+          <span className="dark:text-sky-600 text-blue-700">{hero.lastName}</span>
         </motion.h1>
 
         <motion.span
           {...animationProps}
-          className="text-md sm:text-xl lg:text-2xl font-semibold text-slate-600 dark:text-neutral-400 pt-2 text-center lg:text-left"
+          className="text-xl sm:text-2xl font-semibold text-slate-600 dark:text-neutral-400 mt-2"
         >
           <TypeAnimation
-            sequence={hero.role.flatMap((role) => [role, 1000])}
+            sequence={hero.role.flatMap((role) => [role, 1500])}
             wrapper="span"
-            speed={60}
+            speed={50}
             repeat={Infinity}
           />
         </motion.span>
 
         <motion.p
           {...animationProps}
-          className="text-justify text-md lg:text-xl text-slate-500 dark:text-neutral-400 pt-2 leading-relaxed"
+          className="text-md sm:text-lg text-slate-500 dark:text-neutral-400 mt-4 max-w-xl leading-relaxed"
         >
           {hero.description}
         </motion.p>
 
-        <motion.div {...animationProps} className="flex gap-3 mt-3">
-          {socialLinks.map(({ href, icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-              className="text-blue-950 dark:text-neutral-50 hover:text-blue-900 dark:hover:text-neutral-300 transition duration-300"
-            >
-              {iconMap[icon] || icon}
-            </a>
-          ))}
-        </motion.div>
-
-        <motion.div {...animationProps} className="flex gap-3 mt-4">
-          <a
-            href={hero.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-950 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-900 transition duration-300"
-          >
-            CV
-          </a>
-          <a
-            href={hero.hire}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Hire Me"
-            className="bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-neutral-50 px-4 py-2 rounded-lg shadow-md hover:bg-slate-300 dark:hover:bg-slate-600 transition duration-300"
-          >
-            Hire Me
-          </a>
-        </motion.div>
+        
       </div>
     </section>
   );

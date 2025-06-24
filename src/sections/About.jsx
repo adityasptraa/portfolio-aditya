@@ -1,6 +1,21 @@
 import {aboutMe} from "../data";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
+import { hero, socialLinks } from "../data";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+
+
+const iconMap = {
+  instagram: <FaInstagram size={25} />,
+  linkedin: <FaLinkedin size={25} />,
+  github: <FaGithub size={25} />,
+};
+
+const animationProps = {
+  initial: { y: -50, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  transition: { duration: 1, delay: 0.7 },
+};
 
 
 export default function About() {
@@ -29,6 +44,47 @@ export default function About() {
         >
             {aboutMe.description}
         </motion.span>
+        {/* Social Links */}
+        <motion.div
+          {...animationProps}
+          className="flex gap-4 mt-5"
+        >
+          {socialLinks.map(({ href, icon, label }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="text-blue-950 dark:text-neutral-50 hover:text-blue-700 dark:hover:text-sky-400 transition duration-300"
+            >
+              {iconMap[icon] || icon}
+            </a>
+          ))}
+        </motion.div>
+
+        {/* Buttons */}
+        <motion.div
+          {...animationProps}
+          className="flex gap-4 mt-6"
+        >
+          <a
+            href={hero.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-950 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-900 transition"
+          >
+            Curriculum Vitae
+          </a>
+          <a
+            href={hero.hire}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-white px-5 py-2 rounded-lg shadow hover:bg-slate-300 dark:hover:bg-slate-600 transition"
+          >
+            Hire Me
+          </a>
+        </motion.div>
       </div>
       <div className="w-full flex flex-col justify-center items-center lg:items-end  pt-5 lg:pt-0">
         <motion.img
@@ -44,6 +100,7 @@ export default function About() {
               : "drop-shadow(0 0 10px rgba(22,33,117,0.3))",
           }}
         />
+        
       </div>
     </section>
   );
