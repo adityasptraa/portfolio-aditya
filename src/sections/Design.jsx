@@ -1,50 +1,5 @@
 import { motion } from "framer-motion";
-import ticketMusica from "../assets/design/ticket-musica.jpg";
-import certificateDesign from "../assets/design/sertif-design.jpg";
-import ticketJamming from "../assets/design/ticket-jamming.jpg";
-import posterJamming from "../assets/design/poster-jamming.jpg";
-import merchDesign from "../assets/design/merch-design.jpg";
-import nametagDesign from "../assets/design/nametag-design.jpg";
-
-const dataDesign = [
-  {
-    id: 1,
-    title: "Ticket Design",
-    issuer: "Musica Holic Talkshow #5",
-    image: ticketMusica,
-  },
-  {
-    id: 2,
-    title: "Certificate Design",
-    issuer: "Musicaholic Talkshow #5",
-    image: certificateDesign,
-  },
-  {
-    id: 3,
-    title: "Tiket Design",
-    issuer: "Jamming Session #7",
-    image: ticketJamming,
-  },
-  {
-    id: 4,
-    title: "Main Event Poster Design",
-    issuer: "Jamming Session #7",
-    image: posterJamming,
-  },
-  {
-    id: 5,
-    title: "Merch Design",
-    issuer: "Musicaholic Talkshow #5",
-    image: merchDesign,
-  },
-  {
-    id: 6,
-    title: "Nametag Design",
-    issuer: "Musicaholic Talkshow #5",
-    image: nametagDesign,
-  },
-];
-
+import { allDesigns } from "../data/design";
 
 const animationProps = {
   whileInView: { opacity: 1, y: 0 },
@@ -68,7 +23,7 @@ const Design = () => {
 
         <motion.div {...animationProps} className="flex flex-col">
           <motion.div {...animationProps} className="grid gap-4 grid-cols-3 w-full">
-            {dataDesign.map((design) => (
+            {allDesigns.map((design) => (
               <motion.div
                 key={design.id}
                 {...animationProps}

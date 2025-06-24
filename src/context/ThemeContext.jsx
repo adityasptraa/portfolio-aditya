@@ -1,20 +1,16 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext } from "react";
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved === "light") return true;
-    return false; // default to light mode
-  });
+  // Selalu pakai light mode, jadi tidak perlu toggle atau state
+  const darkMode = false;
+  const toggleTheme = () => {}; // tidak melakukan apa-apa
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-    localStorage.setItem("theme", darkMode ? "dark" : "light");
-  }, [darkMode]);
-
-  const toggleTheme = () => setDarkMode(!darkMode);
+  // Pastikan class `dark` dihapus dari <html>
+  if (typeof document !== "undefined") {
+    document.documentElement.classList.remove("dark");
+  }
 
   return (
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
@@ -24,3 +20,4 @@ export const ThemeProvider = ({ children }) => {
 };
 
 export const useTheme = () => useContext(ThemeContext);
+export default ThemeContext;

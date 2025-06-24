@@ -2,7 +2,6 @@ import eLibrary from "../assets/projects/eLibrary.jpg";
 import sipetak from "../assets/projects/sipetak.jpg";
 import nuansaBudaya from "../assets/projects/nuansaBudaya.jpg";
 import shoemag from "../assets/projects/shoemag.jpg";
-import bandGenerator from "../assets/projects/bandGenerator.jpg";
 import madeByCan from "../assets/projects/madeByCan.jpg";
 
 export const allTechnologies = [
